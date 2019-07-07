@@ -79,7 +79,7 @@ while(cap.isOpened()):
         cv2.imwrite(f"frame{counter}.png", np.hstack([frameMasked, frame]))
  
     # Press Q on keyboard to  exit
-    if cv2.waitKey(args["delay"]) & 0xFF == ord('q'):
+    if cv2.waitKey(int(args["delay"])) & 0xFF == ord('q'):
       break
  
   # Break the loop
